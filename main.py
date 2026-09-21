@@ -99,8 +99,10 @@ def process_generate_qris(call):
             f"<b>Total:</b> Rp 85.000\n"
             f"<b>Order ID:</b> <code>{order_id}</code>\n"
             f"<b>Batas Waktu:</b> 15 Menit\n\n"
-            f"Silakan scan QR Code di atas menggunakan GoPay, OVO, DANA, ShopeePay, BCA, Mandiri, DLL.\n\n"
-            f"⚡ <b>Setelah pembayaran berhasil, link grup akan terkirim secara otomatis!</b>"
+            f"<b>String QRIS (Copy untuk Simulator):</b>\n"
+            f"<code>{qr_string}</code>\n\n"
+            f"Silakan scan QR Code di atas menggunakan GoPay, OVO, DANA, ShopeePay, BCA, Mandiri, DLL."
+        )
         )
         
         bot.send_photo(
