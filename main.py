@@ -19,7 +19,7 @@ app = Flask(__name__)
 core_api = midtransclient.CoreApi(
     is_production=IS_PRODUCTION,
     server_key=MIDTRANS_SERVER_KEY,
-    client_key=os.getenv("MIDTRANS_CLIENT_KEY", "SB-Mid-client-YOUR_CLIENT_KEY")
+    client_key=os.getenv("MIDTRANS_CLIENT_KEY", "Mid-client-aAgS7XTQ8Vm1YQw5")
 )
 
 ALL_GROUP_IDS = [
