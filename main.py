@@ -103,7 +103,6 @@ def process_generate_qris(call):
             f"<code>{qr_string}</code>\n\n"
             f"Silakan scan QR Code di atas menggunakan GoPay, OVO, DANA, ShopeePay, BCA, Mandiri, DLL."
         )
-        )
         
         bot.send_photo(
             chat_id, 
