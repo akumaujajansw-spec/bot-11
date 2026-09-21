@@ -115,6 +115,10 @@ def process_generate_qris(call):
         bot.send_message(chat_id, f"Gagal membuat QRIS Pembayaran: {e}")
 
 # --- WEBHOOK / NOTIFICATION HANDLER UNTUK MIDTRANS ---
+@app.route('/', methods=['GET'])
+def index():
+    return "Server Bot Telegram & Webhook Midtrans Aktif!", 200
+    
 @app.route('/midtrans-webhook', methods=['POST'])
 def midtrans_webhook():
     notification_body = request.get_json()
